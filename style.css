@@ -1,0 +1,409 @@
+/* Spotify color themes */
+:root {
+  --green: #1DB954;
+  --black: #191414;
+  --white: #FFFFFF;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: border-bottom-color 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom-color: #1db954;
+}
+
+/* Hero section styles */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/banner.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #1db954;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(29, 185, 84, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(29, 185, 84, 0.3);
+}
+
+/* About section styles */
+#about {
+  padding: 80px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Portfolio section styles */
+#portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none; /* Remove bullet point markers */
+  gap: 30px;
+
+}
+
+#portfolio li {
+  flex-basis: calc(33.33% - 20px); /* Update the width of each project item */
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#portfolio li:hover {
+  transform: scale(1.05); /* Add a scaling effect on hover */
+}
+
+#portfolio li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#portfolio h2 {
+ margin-bottom: 40px;
+}
+
+#portfolio li h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#portfolio li p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Contact section styles */
+#contact {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+
+#contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: grid;
+  gap: 10px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#contact input[type="submit"] {
+  background-color: #1db954;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #179848;
+}
+
+@media (max-width: 768px) {
+  #contact .container {
+    padding: 20px;
+  }
+}
+  
+  /* Footer styles */
+  footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 20px;
+  }
+  
+  footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  }
+  
+  footer ul {
+  display: flex;
+  }
+  
+  footer ul li {
+  margin-right: 20px;
+  }
+  
+  footer ul li:last-child {
+  margin-right: 0;
+  }
+  
+  footer ul li a {
+  color: var(--white);
+  text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+  header {
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  nav ul {
+  margin-top: 20px;
+  justify-content: center;
+  }
+  
+  nav ul li {
+  margin-right: 10px;
+  }
+  
+  #hero {
+  height: 60vh;
+  }
+  
+  #hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  }
+  
+  #hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  }
+  
+  #about h2 {
+  font-size: 30px;
+  }
+  
+  #about p {
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 20px;
+  }
+
+  #portfolio h2 {
+  font-size: 30px;
+  }
+  
+  #portfolio li {
+  width: calc(50% - 10px);
+  }
+  
+  #portfolio img {
+  margin-bottom: 10px;
+  }
+  
+  #portfolio h3 {
+  font-size: 20px;
+  }
+  
+  #portfolio p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  }
+  
+  #contact h2 {
+  font-size: 30px;
+  }
+  
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
+  margin-bottom: 10px;
+  }
+  }
+  
+  @media screen and (max-width: 576px) {
+  header {
+  padding: 10px;
+  }
+  
+  #hero h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+  
+  #hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  }
+  
+  #about h2 {
+  font-size: 24px;
+  }
+  
+  #about p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  }
+  
+  #portfolio h2 {
+  font-size: 24px;
+  }
+  
+  #portfolio li {
+  width: 100%;
+  margin-bottom: 20px;
+  }
+  
+  #portfolio img {
+  margin-bottom: 10px;
+  }
+  
+ #portfolio h3 {
+font-size: 20px;
+}
+
+#portfolio p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+#contact h2 {
+font-size: 24px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+margin-bottom: 10px;
+}
+
+footer {
+flex-direction: column;
+text-align: center;
+padding: 20px 0;
+}
+
+footer ul {
+margin-bottom: 20px;
+}
+
+footer ul li {
+margin-right: 0;
+margin-bottom: 10px;
+}
+}
+  
+  
