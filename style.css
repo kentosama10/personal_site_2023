@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(to right, rgb(16, 16, 16) 50%, rgb(28, 28, 28) 50%);
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.3em;
 }
 
 /* Header Styles/ */
@@ -68,7 +70,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin: 25vh 0;
 }
 
 .logo img {
@@ -83,16 +85,17 @@ header {
 }
 
 .title-line {
-  width: 20px;
-  height: 5px;
+  width: 45px;
+  height: 6px;
   background-color: #ffffff;
   border: none;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin: 0;
-  color: #eddcbb;
+  color: #ffffff;
 }
