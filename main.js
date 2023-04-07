@@ -1,8 +1,8 @@
-const hamburger = document.querySelector('.hamburger');
+const menuText = document.querySelector('.menu-text');
 const menuOverlay = document.querySelector('.menu-overlay');
 
 // Add event listener to hamburger button to toggle menu
-hamburger.addEventListener('click', function() {
+menuText.addEventListener('click', function() {
   menuOverlay.classList.toggle('open');
 });
 
