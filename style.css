@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   background: linear-gradient(
     to right,
@@ -6,16 +10,19 @@ body {
   );
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
+  padding: 0 20px;
 }
 
 /* Header Styles/ */
-header {
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  background-color: none;
-  padding: 0 20px;
+  margin: 0;
+}
+
+.logo img {
+  height: 70px;
 }
 
 .hamburger {
@@ -28,14 +35,10 @@ header {
 }
 
 .bar {
-  width: 30px;
+  width: 25px;
   height: 4px;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
-}
-
-.bar:hover {
-  color: #555;
 }
 
 .menu-text {
@@ -51,27 +54,7 @@ header {
   color: #e6a627;
 }
 
-.menu {
-  display: none;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  background-color: none;
-  padding: 20px;
-  list-style: none;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu li {
-  margin-bottom: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
+/* Menu-Overlay Styles */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -82,6 +65,11 @@ header {
   z-index: 9999;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
+}
+
+.menu-overlay-logo img {
+  height: 70px;
+  padding: 0 20px;
 }
 
 .menu-overlay ul {
@@ -117,8 +105,8 @@ header {
 
 .close-button {
   position: absolute;
-  top: 1.7rem;
-  right: 1.6rem;
+  top: 1rem;
+  right: 1rem;
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -136,11 +124,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20vh 0;
+  margin: 15vh 0;
 }
 
-.logo img {
-  height: 100px;
+.logo-dev img {
+  height: 120px;
 }
 
 .title {
@@ -166,30 +154,31 @@ header {
   margin: 0;
   color: #ffffff;
   display: inline-block;
-  padding-bottom: 5px;
 }
 
-/* Footer */
-footer {
+/* Arrow */
+.arrow-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  background-color: #1f1f1f;
-  color: #fff;
-  font-size: 14px;
-  margin-top: 50px;
+  position: relative;
+  height: 13vh;
+  overflow: hidden;
 }
 
-.footer-text {
-  margin-right: 10px;
+.arrow-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #e6a627;
+  animation: arrow-bounce 1.5s ease-in-out infinite;
 }
 
-.footer-icon {
-  font-size: 16px;
-  color: #e6a627;
-}
-
-.footer-icon:hover {
-  color: #fff;
+@keyframes arrow-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
