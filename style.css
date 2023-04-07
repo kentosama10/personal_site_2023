@@ -102,8 +102,6 @@ header {
   transform: translateX(0);
 }
 
-
-
 /* Section */
 .developer-section {
   display: flex;
@@ -117,24 +115,52 @@ header {
 }
 
 .title {
-  font-size: 60px;
+  font-size: 80px;
   margin: 20px 0;
   text-align: center;
-  color: #e6a627;
+  color: #e6a627; 
 }
 
 .title-line {
-  width: 45px;
+  width: 100px;
   height: 6px;
   background-color: #ffffff;
   border: none;
   margin-bottom: 20px;
   margin-top: 0;
+  display: block;
 }
 
 .subtitle {
-  font-size: 25px;
-  text-align: center;
+  font-size: 35px;
+  text-align: left;
   margin: 0;
   color: #ffffff;
+  display: inline-block;
+  padding-bottom: 5px;
 }
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 50px;
+  }
+  
+  .footer-text {
+  margin-right: 10px;
+  }
+  
+  .footer-icon {
+  font-size: 16px;
+  color: #e6a627;
+  }
+  
+  .footer-icon:hover {
+  color: #fff;
+  }
