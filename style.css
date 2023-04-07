@@ -1,6 +1,10 @@
 body {
-  background: linear-gradient(to right, rgb(16, 16, 16) 50%, rgb(28, 28, 28) 50%);
-  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to right,
+    rgb(16, 16, 16) 50%,
+    rgb(28, 28, 28) 50%
+  );
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
 }
 
@@ -28,6 +32,10 @@ header {
   height: 4px;
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+.bar:hover {
+  color: #555;
 }
 
 .menu-text {
@@ -71,7 +79,7 @@ header {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
@@ -102,6 +110,22 @@ header {
   transform: translateX(0);
 }
 
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  color: #555;
+}
+
 /* Section */
 .developer-section {
   display: flex;
@@ -118,11 +142,11 @@ header {
   font-size: 80px;
   margin: 20px 0;
   text-align: center;
-  color: #e6a627; 
+  color: #e6a627;
 }
 
 .title-line {
-  width: 100px;
+  width: 50px;
   height: 6px;
   background-color: #ffffff;
   border: none;
@@ -150,17 +174,17 @@ footer {
   color: #fff;
   font-size: 14px;
   margin-top: 50px;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
   margin-right: 10px;
-  }
-  
-  .footer-icon {
+}
+
+.footer-icon {
   font-size: 16px;
   color: #e6a627;
-  }
-  
-  .footer-icon:hover {
+}
+
+.footer-icon:hover {
   color: #fff;
-  }
+}
