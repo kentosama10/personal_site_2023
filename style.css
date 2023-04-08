@@ -2,13 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  margin: 0;
-}
-
 body {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
+  margin: 0;
 }
 
 .container {
@@ -17,7 +14,6 @@ body {
     rgb(16, 16, 16) 50%,
     rgb(28, 28, 28) 50%
   );
-  margin: 0;
 }
 
 /* Header Styles/ */
