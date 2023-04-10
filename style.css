@@ -50,6 +50,7 @@ p {
 
 /* Header Logo */
 .logo img {
+  color: #fff;
   height: 70px;
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
@@ -65,7 +66,7 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .hamburger {
@@ -113,7 +114,7 @@ p {
 .menu-overlay-logo img {
   cursor: pointer;
   height: 70px;
-  padding: 0 20px;
+  padding: 10px 20px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -154,7 +155,7 @@ p {
 
 .close-button {
   position: absolute;
-  top: 0.7rem;
+  top: 1.2rem;
   right: 0.8rem;
   background-color: transparent;
   border: none;
@@ -240,7 +241,7 @@ p {
 
 .logo-dev img {
   cursor: pointer;
-  height: 120px;
+  height: 100px;
   transition: transform 0.5s ease-in-out;
 }
 
