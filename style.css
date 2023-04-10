@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
   margin: 0;
 }
@@ -16,16 +16,51 @@ body.loaded .loading-screen {
 }
 
 p {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   letter-spacing: 0;
 }
 
+/* Loading Screen */
+#loader-container {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+}
 
-/* Add a loading spinner */
+#logo {
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
 
+#loading-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
 
-
-
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Home Page */
 .home-page-container {
@@ -35,7 +70,6 @@ p {
     rgb(28, 28, 28) 50%
   );
 }
-
 
 /* Header Logo */
 .logo img {
@@ -169,7 +203,7 @@ p {
   font-size: 16px;
   text-align: left;
   margin-left: 20px;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -268,11 +302,11 @@ p {
   .title {
     font-size: 50px;
   }
-  
+
   .subtitle {
     font-size: 20px;
   }
-  
+
   .title-line {
     margin-bottom: 10px;
   }
@@ -353,4 +387,3 @@ p {
 }
 
 /* About Styles */
-
