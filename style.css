@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
   margin: 0;
+}
+
+p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
 }
 
 /* Home Page */
@@ -149,8 +157,7 @@ body {
   font-size: 16px;
   text-align: left;
   margin-left: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -159,7 +166,6 @@ body {
 }
 
 .footer i {
-  font-size: 20px;
   color: #fff;
 }
 
@@ -232,6 +238,21 @@ body {
   margin: 0;
   color: #ffffff;
   display: inline-block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+  }
+  
+  .title-line {
+    margin-bottom: 10px;
+  }
 }
 
 /* Arrow */
