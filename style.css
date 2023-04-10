@@ -8,13 +8,15 @@ body {
   margin: 0;
 }
 
-.container {
+/* Home Page */
+.home-page-container {
   background: linear-gradient(
     to right,
     rgb(16, 16, 16) 50%,
     rgb(28, 28, 28) 50%
   );
 }
+
 
 /* Header Logo */
 .logo img {
@@ -261,20 +263,6 @@ body {
 
 /* Skills Section */
 
-.proficiences-header {
-  display: block;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  letter-spacing: 0.1em;
-  font-size: 20px;
-  text-align: center;    
-}
-
 .skills-section {
   background-color: #f5f5f5;
   padding: 50px 0;
@@ -319,3 +307,6 @@ body {
     margin: 20px 0;
   }
 }
+
+/* About Styles */
+
