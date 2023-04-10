@@ -11,10 +11,32 @@ body {
   margin: 0;
 }
 
+body.loaded .loading-screen {
+  display: none;
+}
+
 p {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
 }
+
+/* Loading Screen */
+/* Set overlay to cover the entire viewport */
+.overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Add a loading spinner */
+
+
+
+
 
 /* Home Page */
 .home-page-container {
@@ -197,6 +219,17 @@ p {
   opacity: 1;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 550px;
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
 /* Section */
 .developer-section {
   display: flex;
@@ -316,7 +349,7 @@ p {
 
 .skill p {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 600px) {
