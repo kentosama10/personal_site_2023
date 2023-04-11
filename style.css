@@ -374,12 +374,16 @@ p {
 }
 
 /* About Styles */
+
+/* About Header */
 .about-page-container {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .about-hero {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -425,3 +429,44 @@ p {
 .about-menu-text:hover {
   color: #e6a627;
 }
+
+/* About Description */
+#about-me {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.about-me-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 20px;
+}
+
+.about-me-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-me-container hr {
+  border: 5px solid #988345;
+  margin-bottom: 20px;
+  width: 35px;
+}
+
+.about-me-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 50px;
+}
+
