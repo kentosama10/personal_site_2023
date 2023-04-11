@@ -11,10 +11,6 @@ body {
   margin: 0;
 }
 
-body.loaded .loading-screen {
-  display: none;
-}
-
 p {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   letter-spacing: 0;
@@ -69,6 +65,7 @@ p {
     rgb(16, 16, 16) 50%,
     rgb(28, 28, 28) 50%
   );
+  
 }
 
 /* Header Logo */

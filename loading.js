@@ -3,19 +3,25 @@ window.addEventListener("load", function(){
   const container = document.getElementById("home-page-container");
   const loadingBar = document.getElementById("loading-bar");
   let width = 0;
-  const interval = setInterval(function(){
+  const loaderFadeOutDuration = 1000;
+  const containerFadeInDuration = 1000;
+
+  function animateLoadingBar(timestamp) {
     if (width >= 100) {
-      clearInterval(interval);
       setTimeout(function(){
+        loader.style.transition = `opacity ${loaderFadeOutDuration}ms`;
         loader.style.opacity = "0";
-        setTimeout(function(){
+        container.style.transition = `opacity ${containerFadeInDuration}ms`;
+        container.style.opacity = "1";
+        requestAnimationFrame(function(){
           loader.style.display = "none";
-          container.style.opacity = "1";
-        }, 1000);
+        });
       }, 500);
     } else {
       width += 1;
       loadingBar.style.width = width + "%";
+      requestAnimationFrame(animateLoadingBar);
     }
-  }, 20);
+  }
+  requestAnimationFrame(animateLoadingBar);
 });
