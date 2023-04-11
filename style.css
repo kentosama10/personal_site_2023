@@ -3,8 +3,8 @@
 
 html {
   scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -67,9 +67,6 @@ p {
   justify-content: flex-end;
 }
 
-
-
-
 /* Header Logo */
 .logo img {
   color: #fff;
@@ -94,8 +91,6 @@ p {
   left: 0;
   right: 0;
 }
-
-
 
 .hamburger {
   display: flex;
@@ -489,16 +484,16 @@ p {
     width: 200px;
     height: 200px;
   }
-  
+
   .about-me-container h1 {
     font-size: 40px;
   }
-  
+
   .about-me-container hr {
     margin-bottom: 20px;
     width: 25px;
   }
-  
+
   .about-me-container p {
     font-size: 18px;
     margin-bottom: 30px;
@@ -510,23 +505,23 @@ p {
   #about-me {
     padding: 40px 0;
   }
-  
+
   .about-me-container img {
     width: 150px;
     height: 150px;
     margin-bottom: 30px;
   }
-  
+
   .about-me-container h1 {
     font-size: 30px;
     margin-bottom: 10px;
   }
-  
+
   .about-me-container hr {
     margin-bottom: 10px;
     width: 20px;
   }
-  
+
   .about-me-container p {
     font-size: 16px;
     margin-bottom: 30px;
@@ -558,7 +553,7 @@ p {
   display: inline-block;
   width: 100%;
   max-width: 900px;
-  margin: 20px;
+  margin: 40px;
 }
 
 .certificate img {
