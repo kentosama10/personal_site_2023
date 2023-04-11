@@ -1,22 +1,28 @@
-window.addEventListener("load", function(){
-  const loader = document.getElementById("loader-container");
-  const container = document.getElementById("home-page-container");
-  const loadingBar = document.getElementById("loading-bar");
-  let width = 0;
-  const interval = setInterval(function(){
-    if (width >= 100) {
-      clearInterval(interval);
-      setTimeout(function(){
-        loader.style.opacity = "0";
-        setTimeout(function(){
-          loader.style.display = "none";
-          container.style.opacity = "1";
-          document.body.style.overflow = "auto";
-        }, 0);
-      }, 500);
-    } else {
-      width += 5;
-      loadingBar.style.width = width + "%";
-    }
-  }, 10);
-});
+// Get references to the loading screen and loading bar
+const loaderContainer = document.getElementById('loader-container');
+const loadingBar = document.getElementById('loading-bar');
+
+// Show the loading screen and add the no-scroll class to the body element
+function showLoadingScreen() {
+  loaderContainer.style.display = 'flex';
+  document.body.classList.add('no-scroll');
+}
+
+// Hide the loading screen and remove the no-scroll class from the body element
+function hideLoadingScreen() {
+  loaderContainer.style.display = 'none';
+  document.body.classList.remove('no-scroll');
+}
+
+// Simulate a loading process
+function simulateLoading() {
+  showLoadingScreen();
+
+  // Simulate a 3-second loading process
+  setTimeout(() => {
+    hideLoadingScreen();
+  }, 1000);
+}
+
+// Call the simulateLoading function when the page is loaded
+window.addEventListener('load', simulateLoading);
