@@ -1,4 +1,4 @@
-const menuText = document.querySelector('.menu-text');
+const menuText = document.querySelector('.menu-text, .about-menu-text');
 const menuOverlay = document.querySelector('.menu-overlay');
 
 // Add event listener to hamburger button to toggle menu

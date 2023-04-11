@@ -125,7 +125,7 @@ p {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
@@ -373,5 +373,55 @@ p {
   font-size: 16px;
 }
 
-
 /* About Styles */
+.about-page-container {
+  background-color: #ffffff;
+}
+
+.about-hero {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.about-logo img {
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-logo img:hover {
+  transform: rotate(180deg);
+}
+
+.about-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.about-bar {
+  width: 25px;
+  height: 4px;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-menu-text {
+  letter-spacing: 0;
+  display: flex;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-menu-text:hover {
+  color: #e6a627;
+}
