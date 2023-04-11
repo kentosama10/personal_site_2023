@@ -9,7 +9,6 @@ body {
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 0.3em;
   margin: 0;
-  overflow: hidden;
 }
 
 p {
@@ -373,14 +372,24 @@ p {
   font-size: 16px;
 }
 
-/* About Styles */
+/* About Page Styles */
 
-/* About Header */
 .about-page-container {
   background-color: #f2f2f2;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
+
+/* About Logo */
+.about-logo img {
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about-logo img:hover {
+  transform: rotate(180deg);
+}
+
+/* About Header */
 
 .about-hero {
   background-color: #f2f2f2;
@@ -391,15 +400,6 @@ p {
   padding: 10px 20px;
 }
 
-.about-logo img {
-  height: 70px;
-  cursor: pointer;
-  transition: transform 0.5s ease-in-out;
-}
-
-.about-logo img:hover {
-  transform: rotate(180deg);
-}
 
 .about-hamburger {
   display: flex;
@@ -448,13 +448,13 @@ p {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 20px;
 }
 
 .about-me-container h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .about-me-container hr {
@@ -468,5 +468,5 @@ p {
   line-height: 1.5;
   color: #333;
   margin-bottom: 50px;
+  letter-spacing: 1px;
 }
-

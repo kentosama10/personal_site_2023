@@ -1,4 +1,3 @@
-document.body.style.overflow = "hidden";
 window.addEventListener("load", function(){
   const loader = document.getElementById("loader-container");
   const container = document.getElementById("home-page-container");
