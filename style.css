@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 html {
   scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -461,5 +463,90 @@ p {
   line-height: 1.5;
   color: #333;
   margin-bottom: 50px;
-  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me-container img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .about-me-container h1 {
+    font-size: 30px;
+  }
+  
+  .about-me-container hr {
+    margin-bottom: 10px;
+    width: 25px;
+  }
+  
+  .about-me-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}
+
+/* Certificate Section */
+#certificates {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.certificates-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certificates-container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.certificate {
+  display: inline-block;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px;
+}
+
+.certificate img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.certificate h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.certificate p {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .certificates-container h2 {
+    font-size: 24px;
+  }
+
+  .certificate {
+    max-width: 350px;
+  }
+
+  .certificate h3 {
+    font-size: 20px;
+  }
+
+  .certificate p {
+    font-size: 16px;
+  }
 }
