@@ -18,7 +18,7 @@ function hideLoadingScreen() {
 function simulateLoading() {
   showLoadingScreen();
 
-  // Simulate a 3-second loading process
+  // Simulate a 1-second loading process
   setTimeout(() => {
     hideLoadingScreen();
   }, 1000);
