@@ -26,3 +26,12 @@ function simulateLoading() {
 
 // Call the simulateLoading function when the page is loaded
 window.addEventListener('load', simulateLoading);
+
+window.onload = function () {
+  setTimeout(function () {
+    document.getElementById("loader-container").classList.add("hide");
+    document.getElementById("home-page-container",).classList.add("show");
+  }, 1000);
+};
+
+
