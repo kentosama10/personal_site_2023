@@ -215,11 +215,11 @@ p {
   letter-spacing: 0.1em;
 }
 
-.menu-overlay-footer  span {
+.menu-overlay-footer span {
   display: inline-block;
 }
 
-.menu-overlay-footer  i {
+.menu-overlay-footer i {
   color: #fff;
 }
 
@@ -466,6 +466,14 @@ p {
   object-fit: cover;
   object-position: center;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-me-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .about-me-container h1 {
@@ -495,8 +503,10 @@ p {
   }
 
   .about-me-container img {
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 30px;
   }
 
   .about-me-container h1 {
@@ -521,9 +531,10 @@ p {
   }
 
   .about-me-container img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
   }
 
   .about-me-container h1 {
@@ -647,7 +658,7 @@ p {
   width: 35px;
 }
 
- .contact-number {
+.contact-number {
   margin-top: 0;
   margin-bottom: 40px;
 }
@@ -682,8 +693,6 @@ p {
 .socials img:hover {
   transform: scale(1.5);
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .contact-container h2 {
