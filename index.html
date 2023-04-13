@@ -1,119 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kent Cabrera Sumbilon</title>
-  <link rel="shortcut icon" type="image/png" href="img/logo.png">
-</head>
-<link rel="stylesheet" href="style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-
-<div id="loader-container">
-  <img id="logo" src="img/logo.png" alt="Logo">
-  <div id="loading-bar"></div>
-</div>
-<script src="loading.js"></script>
-<div id="home-page-container" class="home-page-container">
-  <header class="hero">
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kent Cabrera Sumbilon</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="scroll-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M11.293 7.293l-4 4c-.391.391-.391 1.023 0 1.414.391.391 1.023.391 1.414 0L12 9.414l3.293 3.293c.391.391 1.023.391 1.414 0 .391-.391.391-1.023 0-1.414l-4-4c-.391-.391-1.023-.391-1.414 0z"
+        />
+      </svg>
     </div>
-    <nav>
-      <div class="menu-text">
-        Menu
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+
+    <div id="loader-container">
+      <img id="logo" src="img/logo.png" alt="Logo" />
+      <div id="loading-bar"></div>
+    </div>
+    <script src="loading.js"></script>
+    <div id="home-page-container" class="home-page-container">
+      <header class="hero">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" />
+        </div>
+        <nav>
+          <div class="menu-text">
+            Menu
+            <div class="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="developer-section">
+        <div class="logo-dev">
+          <img src="img/logo.png" alt="Logo" />
+        </div>
+        <h1 class="title">Kent Cabrera Sumbilon</h1>
+        <hr class="title-line" />
+        <h2 class="subtitle">Programmer + Developer + Tech Enthusiast</h2>
+      </section>
+
+      <div class="arrow-container">
+        <a href="#skills-section" class="arrow-link">
+          <svg class="arrow-icon" viewBox="0 0 24 24">
+            <path d="M12 17.25l-8.25-8.25h16.5z" fill="#E6A627"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-overlay">
+      <div class="menu-overlay-logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <button class="close-button">✖</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="footer">
+        <span>&copy;</span>
+        <i class="fas fa-user"></i>
+        2023, Kent Cabrera Sumbilon
+      </div>
+    </div>
+    <section id="skills-section" class="skills-section">
+      <h2>Programming Language</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="img/html.png" alt="HTML" />
+          <h3>HTML</h3>
+          <p>Advanced</p>
+        </div>
+        <div class="skill">
+          <img src="img/css.png" alt="CSS" />
+          <h3>CSS</h3>
+          <p>Advanced</p>
+        </div>
+        <div class="skill">
+          <img src="img/js.png" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>Advanced</p>
+        </div>
+        <div class="skill">
+          <img src="img/php.png" alt="PHP" />
+          <h3>PHP</h3>
+          <p>Intermediate</p>
+        </div>
+        <div class="skill">
+          <img src="img/python.png" alt="Python" />
+          <h3>Python</h3>
+          <p>Intermediate</p>
         </div>
       </div>
-    </nav>
-    
-  </header>
+    </section>
 
-  <div class="scroll-to-top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path fill="currentColor"
-        d="M11.293 7.293l-4 4c-.391.391-.391 1.023 0 1.414.391.391 1.023.391 1.414 0L12 9.414l3.293 3.293c.391.391 1.023.391 1.414 0 .391-.391.391-1.023 0-1.414l-4-4c-.391-.391-1.023-.391-1.414 0z" />
-    </svg>
-  </div>
-
-  <section class="developer-section">
-    <div class="logo-dev">
-      <img src="img/logo.png" alt="Logo" />
-    </div>
-    <h1 class="title">Kent Cabrera Sumbilon</h1>
-    <hr class="title-line" />
-    <h2 class="subtitle">Programmer + Developer + Tech Enthusiast</h2>
-  </section>
-
-  <div class="arrow-container">
-    <a href="#skills-section" class="arrow-link">
-      <svg class="arrow-icon" viewBox="0 0 24 24">
-        <path d="M12 17.25l-8.25-8.25h16.5z" fill="#E6A627"></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
-<div class="menu-overlay">
-  <div class="menu-overlay-logo">
-    <img src="img/logo.png" alt="Logo" />
-  </div>
-  <button class="close-button">✖</button>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="footer">
-    <span>&copy;</span>
-    <i class="fas fa-user"></i>
-    2023, Kent Cabrera Sumbilon
-  </div>
-</div>
-<section id="skills-section" class="skills-section">
-
-  <h2>Programming Language</h2>
-  <div class="skills-container">
-    <div class="skill">
-      <img src="img/html.png" alt="HTML" />
-      <h3>HTML</h3>
-      <p>Advanced</p>
-    </div>
-    <div class="skill">
-      <img src="img/css.png" alt="CSS" />
-      <h3>CSS</h3>
-      <p>Advanced</p>
-    </div>
-    <div class="skill">
-      <img src="img/js.png" alt="JavaScript" />
-      <h3>JavaScript</h3>
-      <p>Advanced</p>
-    </div>
-    <div class="skill">
-      <img src="img/php.png" alt="PHP" />
-      <h3>PHP</h3>
-      <p>Intermediate</p>
-    </div>
-    <div class="skill">
-      <img src="img/python.png" alt="Python" />
-      <h3>Python</h3>
-      <p>Intermediate</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-<script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

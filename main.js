@@ -33,3 +33,15 @@ if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
   scrollButton.classList.remove("show");
 }
 
+function showContainer(containerId) {
+  setTimeout(function() {
+    document.getElementById("loader-container").classList.add("hide");
+    document.getElementById(containerId).classList.add("show");
+  }, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  showContainer("home-page-container");
+  showContainer("about-page-container");
+  showContainer("contact-page-container");
+});

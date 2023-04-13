@@ -75,7 +75,6 @@ p {
   transform: translateY(0);
 }
 
-
 /* Header Logo */
 .logo img {
   color: #fff;
@@ -389,13 +388,19 @@ p {
 
 .about-page-container {
   background-color: #f2f2f2;
+  transform: translateY(-50px);
+  transition: transform 1s ease-out;
+}
+
+.about-page-container.show {
+  transform: translateY(0);
 }
 
 /* About Logo */
 .about-logo img {
   height: 70px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .about-logo img:hover {
@@ -538,7 +543,6 @@ p {
   }
 }
 
-
 /* Certificate Section */
 #certificates {
   background-color: #f2f2f2;
@@ -605,6 +609,13 @@ p {
 /* Contact Styles */
 .contact-page-container {
   background-color: #f2f2f2;
+  transform: translateY(-50px);
+  transition: transform 1s ease-out;
+}
+
+.contact-page-container.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #contact {
@@ -613,7 +624,6 @@ p {
 }
 
 .contact-container {
-  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -665,26 +675,26 @@ p {
   .contact-container h2 {
     font-size: 30px;
   }
-  
+
   .contact-container h3 {
     font-size: 20px;
   }
-  
+
   .contact-container hr {
     margin-bottom: 10px;
     width: 25px;
   }
-  
+
   .contact-container p {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  
+
   .socials img {
     width: 40px;
     height: 40px;
   }
-  
+
   .socials {
     gap: 20px;
     margin-bottom: 30px;
