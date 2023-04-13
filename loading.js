@@ -27,4 +27,16 @@ function simulateLoading() {
 // Call the simulateLoading function when the page is loaded
 window.addEventListener('load', simulateLoading);
 
+function showContainer(containerId) {
+  setTimeout(function() {
+    document.getElementById("loader-container").classList.add("hide");
+    document.getElementById(containerId).classList.add("show");
+  }, 1000);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  showContainer("home-page-container");
+  showContainer("about-page-container");
+  showContainer("contact-page-container");
+});
 
